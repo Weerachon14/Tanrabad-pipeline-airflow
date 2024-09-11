@@ -1,0 +1,18 @@
+[2024-09-11T02:23:08.751+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-11T02:23:08.769+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: start_mongo_dag.extract_from_mongo manual__2024-09-11T02:17:36.449661+00:00 [queued]>
+[2024-09-11T02:23:08.779+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: start_mongo_dag.extract_from_mongo manual__2024-09-11T02:17:36.449661+00:00 [queued]>
+[2024-09-11T02:23:08.780+0000] {taskinstance.py:2856} INFO - Starting attempt 2 of 2
+[2024-09-11T02:23:08.794+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): extract_from_mongo> on 2024-09-11 02:17:36.449661+00:00
+[2024-09-11T02:23:08.801+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=588) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-11T02:23:08.803+0000] {standard_task_runner.py:72} INFO - Started process 589 to run task
+[2024-09-11T02:23:08.802+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'start_mongo_dag', 'extract_from_mongo', 'manual__2024-09-11T02:17:36.449661+00:00', '--job-id', '11', '--raw', '--subdir', 'DAGS_FOLDER/mongodb-pipeline.py', '--cfg-path', '/tmp/tmpte793krh']
+[2024-09-11T02:23:08.805+0000] {standard_task_runner.py:105} INFO - Job 11: Subtask extract_from_mongo
+[2024-09-11T02:23:08.855+0000] {task_command.py:467} INFO - Running <TaskInstance: start_mongo_dag.extract_from_mongo manual__2024-09-11T02:17:36.449661+00:00 [running]> on host dca6f81c3bd4
+[2024-09-11T02:23:09.062+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='start_mongo_dag' AIRFLOW_CTX_TASK_ID='extract_from_mongo' AIRFLOW_CTX_EXECUTION_DATE='2024-09-11T02:17:36.449661+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-11T02:17:36.449661+00:00'
+[2024-09-11T02:23:09.063+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-11T02:23:09.088+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-09-11T02:23:09.097+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-11T02:23:09.098+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=start_mongo_dag, task_id=extract_from_mongo, run_id=manual__2024-09-11T02:17:36.449661+00:00, execution_date=20240911T021736, start_date=20240911T022308, end_date=20240911T022309
+[2024-09-11T02:23:09.139+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-09-11T02:23:09.153+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-11T02:23:09.155+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
