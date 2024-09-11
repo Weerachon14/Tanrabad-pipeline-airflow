@@ -8665,3 +8665,24 @@ NameError: name 'Check_json' is not defined
 [2024-09-11T07:00:07.353+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:00:07.352+0000] {dag.py:3211} INFO - Sync 1 DAGs
 [2024-09-11T07:00:07.417+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:00:07.417+0000] {dag.py:4138} INFO - Setting next_dagrun for Filter_data to None, run_after=None
 [2024-09-11T07:00:07.449+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data-prep-for-model.py took 0.243 seconds
+[2024-09-11T07:00:37.727+0000] {processor.py:186} INFO - Started process (PID=14162) to work on /opt/airflow/dags/data-prep-for-model.py
+[2024-09-11T07:00:37.728+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data-prep-for-model.py for tasks to queue
+[2024-09-11T07:00:37.730+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:00:37.729+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/data-prep-for-model.py
+[2024-09-11T07:00:37.842+0000] {processor.py:925} INFO - DAG(s) 'Filter_data' retrieved from /opt/airflow/dags/data-prep-for-model.py
+[2024-09-11T07:00:37.870+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:00:37.870+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T07:00:37.890+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:00:37.889+0000] {dag.py:4138} INFO - Setting next_dagrun for Filter_data to None, run_after=None
+[2024-09-11T07:00:37.913+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data-prep-for-model.py took 0.193 seconds
+[2024-09-11T07:01:08.340+0000] {processor.py:186} INFO - Started process (PID=14183) to work on /opt/airflow/dags/data-prep-for-model.py
+[2024-09-11T07:01:08.341+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data-prep-for-model.py for tasks to queue
+[2024-09-11T07:01:08.343+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:01:08.342+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/data-prep-for-model.py
+[2024-09-11T07:01:08.450+0000] {processor.py:925} INFO - DAG(s) 'Filter_data' retrieved from /opt/airflow/dags/data-prep-for-model.py
+[2024-09-11T07:01:08.476+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:01:08.476+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T07:01:08.492+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:01:08.492+0000] {dag.py:4138} INFO - Setting next_dagrun for Filter_data to None, run_after=None
+[2024-09-11T07:01:08.512+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data-prep-for-model.py took 0.181 seconds
+[2024-09-11T07:01:39.212+0000] {processor.py:186} INFO - Started process (PID=14219) to work on /opt/airflow/dags/data-prep-for-model.py
+[2024-09-11T07:01:39.213+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/data-prep-for-model.py for tasks to queue
+[2024-09-11T07:01:39.214+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:01:39.214+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/data-prep-for-model.py
+[2024-09-11T07:01:39.317+0000] {processor.py:925} INFO - DAG(s) 'Filter_data' retrieved from /opt/airflow/dags/data-prep-for-model.py
+[2024-09-11T07:01:39.341+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:01:39.341+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T07:01:39.355+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:01:39.355+0000] {dag.py:4138} INFO - Setting next_dagrun for Filter_data to None, run_after=None
+[2024-09-11T07:01:39.372+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/data-prep-for-model.py took 0.167 seconds

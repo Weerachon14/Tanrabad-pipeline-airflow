@@ -2686,3 +2686,50 @@
 [2024-09-11T07:00:08.438+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:00:08.437+0000] {dag.py:3211} INFO - Sync 1 DAGs
 [2024-09-11T07:00:08.452+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:00:08.452+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
 [2024-09-11T07:00:08.471+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.158 seconds
+[2024-09-11T07:00:38.843+0000] {processor.py:186} INFO - Started process (PID=14167) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T07:00:38.845+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T07:00:38.847+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:00:38.846+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T07:00:38.969+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T07:00:39.002+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:00:39.002+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T07:00:39.028+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:00:39.028+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T07:00:39.053+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.218 seconds
+[2024-09-11T07:01:09.445+0000] {processor.py:186} INFO - Started process (PID=14188) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T07:01:09.446+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T07:01:09.447+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:01:09.447+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T07:01:09.551+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T07:01:09.575+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:01:09.575+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T07:01:09.590+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:01:09.590+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T07:01:09.608+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.170 seconds
+[2024-09-11T07:01:15.633+0000] {processor.py:186} INFO - Started process (PID=14193) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T07:01:15.634+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T07:01:15.636+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:01:15.636+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T07:01:15.739+0000] {processor.py:925} INFO - DAG(s) 'test' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T07:01:15.842+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:01:15.841+0000] {override.py:1858} INFO - Created Permission View: can edit on DAG:test
+[2024-09-11T07:01:15.851+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:01:15.850+0000] {override.py:1858} INFO - Created Permission View: can delete on DAG:test
+[2024-09-11T07:01:15.856+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:01:15.856+0000] {override.py:1858} INFO - Created Permission View: can read on DAG:test
+[2024-09-11T07:01:15.857+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:01:15.857+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T07:01:15.869+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:01:15.869+0000] {dag.py:3234} INFO - Creating ORM DAG for test
+[2024-09-11T07:01:15.870+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:01:15.870+0000] {dag.py:4138} INFO - Setting next_dagrun for test to None, run_after=None
+[2024-09-11T07:01:15.886+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.261 seconds
+[2024-09-11T07:01:16.710+0000] {processor.py:186} INFO - Started process (PID=14198) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T07:01:16.713+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T07:01:16.717+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:01:16.717+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T07:01:16.835+0000] {processor.py:925} INFO - DAG(s) 'test_' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T07:01:16.940+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:01:16.939+0000] {override.py:1858} INFO - Created Permission View: can edit on DAG:test_
+[2024-09-11T07:01:16.950+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:01:16.949+0000] {override.py:1858} INFO - Created Permission View: can delete on DAG:test_
+[2024-09-11T07:01:16.957+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:01:16.957+0000] {override.py:1858} INFO - Created Permission View: can read on DAG:test_
+[2024-09-11T07:01:16.958+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:01:16.958+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T07:01:16.971+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:01:16.971+0000] {dag.py:3234} INFO - Creating ORM DAG for test_
+[2024-09-11T07:01:16.972+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:01:16.972+0000] {dag.py:4138} INFO - Setting next_dagrun for test_ to None, run_after=None
+[2024-09-11T07:01:16.987+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.286 seconds
+[2024-09-11T07:01:18.903+0000] {processor.py:186} INFO - Started process (PID=14208) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T07:01:18.905+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T07:01:18.907+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:01:18.907+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T07:01:19.033+0000] {processor.py:925} INFO - DAG(s) 'test_mongo' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T07:01:19.171+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:01:19.169+0000] {override.py:1858} INFO - Created Permission View: can edit on DAG:test_mongo
+[2024-09-11T07:01:19.182+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:01:19.182+0000] {override.py:1858} INFO - Created Permission View: can delete on DAG:test_mongo
+[2024-09-11T07:01:19.192+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:01:19.191+0000] {override.py:1858} INFO - Created Permission View: can read on DAG:test_mongo
+[2024-09-11T07:01:19.192+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:01:19.192+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T07:01:19.221+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:01:19.221+0000] {dag.py:3234} INFO - Creating ORM DAG for test_mongo
+[2024-09-11T07:01:19.223+0000] {logging_mixin.py:190} INFO - [2024-09-11T07:01:19.222+0000] {dag.py:4138} INFO - Setting next_dagrun for test_mongo to None, run_after=None
+[2024-09-11T07:01:19.276+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.380 seconds

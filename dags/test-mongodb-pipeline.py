@@ -30,7 +30,7 @@ default_args = {
     'retries': 1,
 }
 
-with DAG(dag_id='start_mongo_dag01', 
+with DAG(dag_id='test_mongo', 
          default_args=default_args,
          description='Start query mongoDB',
          schedule_interval=None, 
