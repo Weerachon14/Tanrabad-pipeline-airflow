@@ -1,0 +1,20 @@
+[2024-09-11T03:58:35.432+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-11T03:58:35.661+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Filter_data.query_data_from_mongo manual__2024-09-11T03:58:34.646490+00:00 [queued]>
+[2024-09-11T03:58:35.671+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Filter_data.query_data_from_mongo manual__2024-09-11T03:58:34.646490+00:00 [queued]>
+[2024-09-11T03:58:35.673+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 2
+[2024-09-11T03:58:35.689+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): query_data_from_mongo> on 2024-09-11 03:58:34.646490+00:00
+[2024-09-11T03:58:35.701+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=5073) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-11T03:58:35.703+0000] {standard_task_runner.py:72} INFO - Started process 5075 to run task
+[2024-09-11T03:58:35.700+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'Filter_data', 'query_data_from_mongo', 'manual__2024-09-11T03:58:34.646490+00:00', '--job-id', '28', '--raw', '--subdir', 'DAGS_FOLDER/data-prep-for-model.py', '--cfg-path', '/tmp/tmp7uc9x6ym']
+[2024-09-11T03:58:35.705+0000] {standard_task_runner.py:105} INFO - Job 28: Subtask query_data_from_mongo
+[2024-09-11T03:58:35.799+0000] {task_command.py:467} INFO - Running <TaskInstance: Filter_data.query_data_from_mongo manual__2024-09-11T03:58:34.646490+00:00 [running]> on host dca6f81c3bd4
+[2024-09-11T03:58:35.965+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Filter_data' AIRFLOW_CTX_TASK_ID='query_data_from_mongo' AIRFLOW_CTX_EXECUTION_DATE='2024-09-11T03:58:34.646490+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-11T03:58:34.646490+00:00'
+[2024-09-11T03:58:35.967+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-11T03:58:36.045+0000] {transport.py:1923} INFO - Connected (version 2.0, client OpenSSH_8.2p1)
+[2024-09-11T03:58:36.105+0000] {transport.py:1923} INFO - Authentication (password) successful!
+[2024-09-11T03:58:39.524+0000] {python.py:240} INFO - Done. Returned value was: /opt/***/data/mongo_data.json
+[2024-09-11T03:58:39.541+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-11T03:58:39.542+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=Filter_data, task_id=query_data_from_mongo, run_id=manual__2024-09-11T03:58:34.646490+00:00, execution_date=20240911T035834, start_date=20240911T035835, end_date=20240911T035839
+[2024-09-11T03:58:39.575+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-09-11T03:58:39.591+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-11T03:58:39.592+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

@@ -38,19 +38,93 @@ def query_data_from_mongo(**kwargs):
         
         return file_path  # ส่งพาธไฟล์กลับไปยัง XCom
 
-default_args = {
-    'owner': 'airflow',
-    'start_date': datetime(2024, 9, 11),
-    'retries': 1
-}
+def filter_data(**kwargs):
+    # ดึง path ของไฟล์จาก XCom
+    ti = kwargs['ti']
+    file_path = ti.xcom_pull(key='mongo_file_path', task_ids='query_data_from_mongo')
 
-with DAG(dag_id = 'Start_Pipeline01',
+    # ตรวจสอบว่า file_path ได้ถูกดึงมาจาก XCom หรือไม่
+    if not file_path:
+        raise ValueError("file_path is None. Make sure the previous task has pushed the correct file path to XCom.")
+
+    # อ่านข้อมูลจากไฟล์ JSON ที่ได้จาก task แรก
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+    
+    # กำหนดคอลัมน์ที่ต้องการตัดข้อมูล
+    filtered_data = []
+    for item in data:
+        filtered_item = {
+            'text': item.get('text'),
+            'text_cleaned': item.get('text_cleaned'),
+            'text_tokenized': item.get('text_tokenized'),
+            'label': item.get('label')
+        }
+        filtered_data.append(filtered_item)
+
+    # กำหนดพาธไฟล์ใหม่
+    filtered_file_path = '/opt/airflow/data/filtered_data.json'
+    
+    # ตรวจสอบและสร้างไดเรกทอรีหากยังไม่มี
+    directory = os.path.dirname(filtered_file_path)
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
+    # บันทึกข้อมูลที่ตัดแล้วเป็นไฟล์ JSON ใหม่
+    with open(filtered_file_path, 'w') as filtered_file:
+        json.dump(filtered_data, filtered_file)
+    
+    # ส่งพาธไฟล์ไปยัง XCom เพื่อใช้ใน task อื่น
+    ti.xcom_push(key='filtered_file_path', value=filtered_file_path)
+
+    return filtered_file_path
+
+# def check_json_file(**kwargs):
+#     # ดึง path ของไฟล์จาก XCom
+#     ti = kwargs['ti']
+#     file_path = ti.xcom_pull(key='filtered_file_path', task_ids='filter_data')
+
+#     # ตรวจสอบว่า file_path ได้ถูกดึงมาจาก XCom หรือไม่
+#     if not file_path:
+#         raise ValueError("file_path is None. Make sure the previous task has pushed the correct file path to XCom.")
+
+#     # อ่านข้อมูลจากไฟล์ JSON
+#     try:
+#         with open(file_path, 'r') as file:
+#             data = json.load(file)
+#             print("JSON data:", data)  # พิมพ์ข้อมูล JSON เพื่อตรวจสอบ
+#     except Exception as e:
+#         raise ValueError(f"Error reading JSON file: {e}")
+
+# default_args = {
+#     'owner': 'airflow',
+#     'start_date': datetime(2024, 9, 11),
+#     'retries': 1
+# }
+
+with DAG(dag_id = 'Filter_data',
          default_args = default_args,
          description = 'Start pipeline by query and save file',
          schedule_interval = None,
          catchup = False
 ) as dag:
+    # Task1
     Query_mongo = PythonOperator(
         task_id = 'query_data_from_mongo',
         python_callable = query_data_from_mongo
+        # Task ที่ 2: ตัดคอลัมน์และบันทึกไฟล์ใหม่
     )
+    # Task 2
+    Filter_task = PythonOperator(
+        task_id='filter_data',
+        python_callable=filter_data,
+        provide_context=True
+    )
+
+    # Check_json = PythonOperator(
+    #     task_id='check_json_file',
+    #     python_callable=check_json_file,
+    #     trigger_rule='all_done'  # เพิ่ม trigger rule ตรงนี้
+    # )
+    
+Query_mongo >> Filter_task

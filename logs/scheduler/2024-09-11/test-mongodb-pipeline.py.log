@@ -1,0 +1,413 @@
+[2024-09-11T03:45:20.751+0000] {processor.py:186} INFO - Started process (PID=4431) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:45:20.752+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T03:45:20.754+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:45:20.753+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:45:20.852+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:45:20.959+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:45:20.958+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T03:45:20.973+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:45:20.972+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T03:45:20.992+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.246 seconds
+[2024-09-11T03:45:51.148+0000] {processor.py:186} INFO - Started process (PID=4452) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:45:51.149+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T03:45:51.150+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:45:51.150+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:45:51.239+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:45:51.261+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:45:51.261+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T03:45:51.276+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:45:51.276+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T03:45:51.294+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.152 seconds
+[2024-09-11T03:46:21.586+0000] {processor.py:186} INFO - Started process (PID=4485) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:46:21.587+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T03:46:21.588+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:46:21.588+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:46:21.684+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:46:21.708+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:46:21.707+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T03:46:21.722+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:46:21.722+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T03:46:21.740+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.161 seconds
+[2024-09-11T03:46:52.027+0000] {processor.py:186} INFO - Started process (PID=4518) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:46:52.027+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T03:46:52.029+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:46:52.029+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:46:52.116+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:46:52.139+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:46:52.139+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T03:46:52.154+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:46:52.153+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T03:46:52.172+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.151 seconds
+[2024-09-11T03:47:22.582+0000] {processor.py:186} INFO - Started process (PID=4539) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:47:22.584+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T03:47:22.587+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:47:22.586+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:47:22.750+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:47:22.777+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:47:22.777+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T03:47:22.793+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:47:22.793+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T03:47:22.816+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.242 seconds
+[2024-09-11T03:47:53.021+0000] {processor.py:186} INFO - Started process (PID=4560) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:47:53.022+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T03:47:53.023+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:47:53.023+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:47:53.121+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:47:53.145+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:47:53.145+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T03:47:53.159+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:47:53.159+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T03:47:53.177+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.163 seconds
+[2024-09-11T03:48:23.433+0000] {processor.py:186} INFO - Started process (PID=4581) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:48:23.434+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T03:48:23.435+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:48:23.435+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:48:23.525+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:48:23.546+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:48:23.546+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T03:48:23.560+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:48:23.560+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T03:48:23.578+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.150 seconds
+[2024-09-11T03:48:53.874+0000] {processor.py:186} INFO - Started process (PID=4602) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:48:53.875+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T03:48:53.876+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:48:53.876+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:48:53.981+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:48:54.006+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:48:54.006+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T03:48:54.022+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:48:54.022+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T03:48:54.039+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.172 seconds
+[2024-09-11T03:49:24.419+0000] {processor.py:186} INFO - Started process (PID=4623) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:49:24.420+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T03:49:24.421+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:49:24.421+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:49:24.514+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:49:24.537+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:49:24.537+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T03:49:24.551+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:49:24.550+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T03:49:24.567+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.154 seconds
+[2024-09-11T03:49:54.893+0000] {processor.py:186} INFO - Started process (PID=4644) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:49:54.894+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T03:49:54.897+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:49:54.897+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:49:55.008+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:49:55.030+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:49:55.030+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T03:49:55.045+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:49:55.045+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T03:49:55.063+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.176 seconds
+[2024-09-11T03:50:25.416+0000] {processor.py:186} INFO - Started process (PID=4665) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:50:25.417+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T03:50:25.418+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:50:25.418+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:50:25.506+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:50:25.529+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:50:25.529+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T03:50:25.543+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:50:25.543+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T03:50:25.559+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.148 seconds
+[2024-09-11T03:50:55.816+0000] {processor.py:186} INFO - Started process (PID=4686) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:50:55.818+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T03:50:55.819+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:50:55.819+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:50:55.989+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:50:56.047+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:50:56.046+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T03:50:56.075+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:50:56.073+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T03:50:56.107+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.299 seconds
+[2024-09-11T03:51:26.609+0000] {processor.py:186} INFO - Started process (PID=4708) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:51:26.611+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T03:51:26.615+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:51:26.614+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:51:26.766+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:51:26.801+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:51:26.801+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T03:51:26.831+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:51:26.831+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T03:51:26.863+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.262 seconds
+[2024-09-11T03:51:57.172+0000] {processor.py:186} INFO - Started process (PID=4729) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:51:57.173+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T03:51:57.175+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:51:57.174+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:51:57.272+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:51:57.297+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:51:57.297+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T03:51:57.313+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:51:57.312+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T03:51:57.330+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.167 seconds
+[2024-09-11T03:52:27.594+0000] {processor.py:186} INFO - Started process (PID=4750) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:52:27.595+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T03:52:27.597+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:52:27.597+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:52:27.718+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:52:27.741+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:52:27.741+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T03:52:27.757+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:52:27.757+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T03:52:27.776+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.188 seconds
+[2024-09-11T03:52:58.181+0000] {processor.py:186} INFO - Started process (PID=4771) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:52:58.183+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T03:52:58.185+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:52:58.185+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:52:58.336+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:52:58.367+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:52:58.367+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T03:52:58.384+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:52:58.384+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T03:52:58.405+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.234 seconds
+[2024-09-11T03:53:28.607+0000] {processor.py:186} INFO - Started process (PID=4792) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:53:28.608+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T03:53:28.610+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:53:28.610+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:53:28.736+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:53:28.761+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:53:28.761+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T03:53:28.775+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:53:28.775+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T03:53:28.815+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.216 seconds
+[2024-09-11T03:53:59.051+0000] {processor.py:186} INFO - Started process (PID=4814) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:53:59.052+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T03:53:59.054+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:53:59.054+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:53:59.150+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:53:59.176+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:53:59.175+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T03:53:59.192+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:53:59.192+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T03:53:59.210+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.165 seconds
+[2024-09-11T03:54:29.478+0000] {processor.py:186} INFO - Started process (PID=4835) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:54:29.479+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T03:54:29.481+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:54:29.480+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:54:29.571+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:54:29.594+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:54:29.593+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T03:54:29.608+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:54:29.607+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T03:54:29.626+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.154 seconds
+[2024-09-11T03:54:59.897+0000] {processor.py:186} INFO - Started process (PID=4856) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:54:59.898+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T03:54:59.900+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:54:59.899+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:54:59.995+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:55:00.023+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:55:00.023+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T03:55:00.037+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:55:00.037+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T03:55:00.054+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.164 seconds
+[2024-09-11T03:55:30.356+0000] {processor.py:186} INFO - Started process (PID=4877) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:55:30.357+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T03:55:30.360+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:55:30.359+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:55:30.460+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:55:30.486+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:55:30.486+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T03:55:30.505+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:55:30.504+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T03:55:30.527+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.177 seconds
+[2024-09-11T03:56:00.933+0000] {processor.py:186} INFO - Started process (PID=4898) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:56:00.934+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T03:56:00.935+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:56:00.935+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:56:01.026+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:56:01.048+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:56:01.048+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T03:56:01.061+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:56:01.061+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T03:56:01.078+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.152 seconds
+[2024-09-11T03:56:31.725+0000] {processor.py:186} INFO - Started process (PID=4929) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:56:31.726+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T03:56:31.728+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:56:31.727+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:56:31.878+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:56:31.940+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:56:31.940+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T03:56:31.978+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:56:31.978+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T03:56:32.067+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.351 seconds
+[2024-09-11T03:57:02.313+0000] {processor.py:186} INFO - Started process (PID=4960) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:57:02.314+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T03:57:02.315+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:57:02.315+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:57:02.416+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:57:02.443+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:57:02.442+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T03:57:02.456+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:57:02.456+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T03:57:02.474+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.167 seconds
+[2024-09-11T03:57:33.440+0000] {processor.py:186} INFO - Started process (PID=5001) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:57:33.441+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T03:57:33.443+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:57:33.442+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:57:33.537+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:57:33.560+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:57:33.559+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T03:57:33.574+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:57:33.574+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T03:57:33.591+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.157 seconds
+[2024-09-11T03:58:03.661+0000] {processor.py:186} INFO - Started process (PID=5047) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:58:03.662+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T03:58:03.664+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:58:03.663+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:58:03.772+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:58:03.801+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:58:03.801+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T03:58:03.816+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:58:03.815+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T03:58:03.836+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.181 seconds
+[2024-09-11T03:58:34.137+0000] {processor.py:186} INFO - Started process (PID=5068) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:58:34.138+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T03:58:34.139+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:58:34.139+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:58:34.249+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:58:34.274+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:58:34.274+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T03:58:34.293+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:58:34.292+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T03:58:34.313+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.182 seconds
+[2024-09-11T03:59:04.596+0000] {processor.py:186} INFO - Started process (PID=5104) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:59:04.597+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T03:59:04.599+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:59:04.599+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:59:04.706+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:59:04.736+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:59:04.735+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T03:59:04.754+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:59:04.754+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T03:59:04.779+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.189 seconds
+[2024-09-11T03:59:35.113+0000] {processor.py:186} INFO - Started process (PID=5125) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:59:35.115+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T03:59:35.118+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:59:35.117+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:59:35.259+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T03:59:35.312+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:59:35.311+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T03:59:35.351+0000] {logging_mixin.py:190} INFO - [2024-09-11T03:59:35.350+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T03:59:35.423+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.320 seconds
+[2024-09-11T04:00:05.736+0000] {processor.py:186} INFO - Started process (PID=5146) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:00:05.737+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T04:00:05.739+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:00:05.739+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:00:05.837+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:00:05.861+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:00:05.860+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T04:00:05.875+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:00:05.875+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T04:00:05.894+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.165 seconds
+[2024-09-11T04:00:36.388+0000] {processor.py:186} INFO - Started process (PID=5167) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:00:36.389+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T04:00:36.391+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:00:36.390+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:00:36.487+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:00:36.511+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:00:36.510+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T04:00:36.526+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:00:36.526+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T04:00:36.545+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.163 seconds
+[2024-09-11T04:01:07.076+0000] {processor.py:186} INFO - Started process (PID=5218) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:01:07.077+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T04:01:07.080+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:01:07.079+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:01:07.200+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:01:07.228+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:01:07.228+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T04:01:07.248+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:01:07.248+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T04:01:07.281+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.212 seconds
+[2024-09-11T04:01:37.706+0000] {processor.py:186} INFO - Started process (PID=5239) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:01:37.707+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T04:01:37.708+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:01:37.708+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:01:37.806+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:01:37.831+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:01:37.831+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T04:01:37.845+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:01:37.845+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T04:01:37.863+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.162 seconds
+[2024-09-11T04:02:08.170+0000] {processor.py:186} INFO - Started process (PID=5260) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:02:08.172+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T04:02:08.173+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:02:08.173+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:02:08.286+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:02:08.308+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:02:08.308+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T04:02:08.324+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:02:08.324+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T04:02:08.343+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.179 seconds
+[2024-09-11T04:02:38.683+0000] {processor.py:186} INFO - Started process (PID=5281) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:02:38.684+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T04:02:38.686+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:02:38.685+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:02:38.787+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:02:38.810+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:02:38.809+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T04:02:38.823+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:02:38.823+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T04:02:38.841+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.164 seconds
+[2024-09-11T04:03:09.273+0000] {processor.py:186} INFO - Started process (PID=5302) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:03:09.275+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T04:03:09.276+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:03:09.276+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:03:09.410+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:03:09.437+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:03:09.436+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T04:03:09.455+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:03:09.455+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T04:03:09.475+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.209 seconds
+[2024-09-11T04:03:39.769+0000] {processor.py:186} INFO - Started process (PID=5337) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:03:39.771+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T04:03:39.773+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:03:39.772+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:03:39.891+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:03:39.922+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:03:39.921+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T04:03:39.941+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:03:39.940+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T04:03:39.963+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.202 seconds
+[2024-09-11T04:04:10.535+0000] {processor.py:186} INFO - Started process (PID=5381) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:04:10.536+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T04:04:10.538+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:04:10.537+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:04:10.667+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:04:10.694+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:04:10.694+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T04:04:10.711+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:04:10.710+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T04:04:10.736+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.208 seconds
+[2024-09-11T04:04:41.312+0000] {processor.py:186} INFO - Started process (PID=5409) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:04:41.313+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T04:04:41.314+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:04:41.314+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:04:41.412+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:04:41.436+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:04:41.436+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T04:04:41.452+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:04:41.452+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T04:04:41.471+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.165 seconds
+[2024-09-11T04:05:11.812+0000] {processor.py:186} INFO - Started process (PID=5430) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:05:11.813+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T04:05:11.815+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:05:11.814+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:05:11.910+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:05:11.933+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:05:11.933+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T04:05:11.949+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:05:11.949+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T04:05:11.966+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.160 seconds
+[2024-09-11T04:05:42.303+0000] {processor.py:186} INFO - Started process (PID=5451) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:05:42.309+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T04:05:42.314+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:05:42.312+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:05:42.699+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:05:42.769+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:05:42.768+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T04:05:42.804+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:05:42.803+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T04:05:42.834+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.547 seconds
+[2024-09-11T04:06:13.691+0000] {processor.py:186} INFO - Started process (PID=5472) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:06:13.692+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T04:06:13.694+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:06:13.694+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:06:13.828+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:06:13.857+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:06:13.857+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T04:06:13.874+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:06:13.874+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T04:06:13.909+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.226 seconds
+[2024-09-11T04:06:44.244+0000] {processor.py:186} INFO - Started process (PID=5493) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:06:44.245+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T04:06:44.247+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:06:44.247+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:06:44.344+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:06:44.368+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:06:44.367+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T04:06:44.383+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:06:44.383+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T04:06:44.400+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.162 seconds
+[2024-09-11T04:07:15.044+0000] {processor.py:186} INFO - Started process (PID=5539) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:07:15.045+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T04:07:15.048+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:07:15.047+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:07:15.194+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:07:15.227+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:07:15.227+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T04:07:15.248+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:07:15.248+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T04:07:15.272+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.238 seconds
+[2024-09-11T04:07:45.507+0000] {processor.py:186} INFO - Started process (PID=5563) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:07:45.508+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T04:07:45.509+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:07:45.509+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:07:45.615+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:07:45.646+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:07:45.646+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T04:07:45.662+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:07:45.662+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T04:07:45.682+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.184 seconds
+[2024-09-11T04:08:16.051+0000] {processor.py:186} INFO - Started process (PID=5584) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:08:16.052+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T04:08:16.054+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:08:16.054+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:08:16.155+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:08:16.180+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:08:16.179+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T04:08:16.194+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:08:16.194+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T04:08:16.213+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.169 seconds
+[2024-09-11T04:08:46.563+0000] {processor.py:186} INFO - Started process (PID=5605) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:08:46.564+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T04:08:46.566+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:08:46.565+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:08:46.664+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:08:46.687+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:08:46.686+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T04:08:46.703+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:08:46.703+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T04:08:46.722+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.166 seconds
+[2024-09-11T04:09:17.050+0000] {processor.py:186} INFO - Started process (PID=5629) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:09:17.051+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T04:09:17.052+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:09:17.052+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:09:17.142+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:09:17.166+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:09:17.166+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T04:09:17.180+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:09:17.180+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T04:09:17.197+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.154 seconds
+[2024-09-11T04:09:47.555+0000] {processor.py:186} INFO - Started process (PID=5650) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:09:47.556+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T04:09:47.558+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:09:47.557+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:09:47.648+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:09:47.672+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:09:47.672+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T04:09:47.688+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:09:47.687+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T04:09:47.704+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.156 seconds
+[2024-09-11T04:10:18.010+0000] {processor.py:186} INFO - Started process (PID=5671) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:10:18.011+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T04:10:18.012+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:10:18.012+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:10:18.100+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:10:18.124+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:10:18.124+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T04:10:18.137+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:10:18.137+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T04:10:18.164+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.161 seconds
+[2024-09-11T04:10:48.546+0000] {processor.py:186} INFO - Started process (PID=5692) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:10:48.547+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T04:10:48.548+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:10:48.548+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:10:48.636+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:10:48.660+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:10:48.660+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T04:10:48.676+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:10:48.675+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T04:10:48.692+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.153 seconds
+[2024-09-11T04:11:18.972+0000] {processor.py:186} INFO - Started process (PID=5713) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:11:18.973+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T04:11:18.974+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:11:18.974+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:11:19.067+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:11:19.091+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:11:19.090+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T04:11:19.104+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:11:19.104+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T04:11:19.123+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.158 seconds
+[2024-09-11T04:11:49.524+0000] {processor.py:186} INFO - Started process (PID=5734) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:11:49.525+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T04:11:49.527+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:11:49.527+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:11:49.619+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:11:49.641+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:11:49.641+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T04:11:49.655+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:11:49.654+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T04:11:49.672+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.155 seconds
+[2024-09-11T04:12:19.973+0000] {processor.py:186} INFO - Started process (PID=5755) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:12:19.974+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T04:12:19.975+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:12:19.975+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:12:20.064+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:12:20.087+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:12:20.087+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T04:12:20.100+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:12:20.100+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T04:12:20.118+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.152 seconds
+[2024-09-11T04:12:50.490+0000] {processor.py:186} INFO - Started process (PID=5776) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:12:50.491+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T04:12:50.493+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:12:50.492+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:12:50.585+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:12:50.609+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:12:50.608+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T04:12:50.625+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:12:50.624+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T04:12:50.648+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.165 seconds
+[2024-09-11T04:13:20.963+0000] {processor.py:186} INFO - Started process (PID=5797) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:13:20.964+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T04:13:20.966+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:13:20.966+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:13:21.103+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:13:21.131+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:13:21.130+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T04:13:21.150+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:13:21.149+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T04:13:21.179+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.225 seconds
+[2024-09-11T04:13:51.572+0000] {processor.py:186} INFO - Started process (PID=5818) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:13:51.573+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T04:13:51.574+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:13:51.574+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:13:51.687+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:13:51.715+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:13:51.715+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T04:13:51.729+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:13:51.729+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T04:13:51.753+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.188 seconds
+[2024-09-11T04:14:22.317+0000] {processor.py:186} INFO - Started process (PID=5839) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:14:22.321+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T04:14:22.326+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:14:22.324+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:14:22.571+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:14:22.660+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:14:22.660+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T04:14:22.715+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:14:22.713+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T04:14:22.823+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.519 seconds
+[2024-09-11T04:14:53.106+0000] {processor.py:186} INFO - Started process (PID=5880) to work on /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:14:53.108+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test-mongodb-pipeline.py for tasks to queue
+[2024-09-11T04:14:53.109+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:14:53.109+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:14:53.222+0000] {processor.py:925} INFO - DAG(s) 'start_mongo_dag01' retrieved from /opt/airflow/dags/test-mongodb-pipeline.py
+[2024-09-11T04:14:53.252+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:14:53.252+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-09-11T04:14:53.272+0000] {logging_mixin.py:190} INFO - [2024-09-11T04:14:53.272+0000] {dag.py:4138} INFO - Setting next_dagrun for start_mongo_dag01 to None, run_after=None
+[2024-09-11T04:14:53.297+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test-mongodb-pipeline.py took 0.198 seconds
