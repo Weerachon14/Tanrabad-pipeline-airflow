@@ -1,0 +1,18 @@
+[2024-09-11T06:42:08.058+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-11T06:42:08.072+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Filter_data.transform_label manual__2024-09-11T06:36:57.976042+00:00 [queued]>
+[2024-09-11T06:42:08.080+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Filter_data.transform_label manual__2024-09-11T06:36:57.976042+00:00 [queued]>
+[2024-09-11T06:42:08.081+0000] {taskinstance.py:2856} INFO - Starting attempt 2 of 2
+[2024-09-11T06:42:08.094+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): transform_label> on 2024-09-11 06:36:57.976042+00:00
+[2024-09-11T06:42:08.103+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=13260) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-11T06:42:08.105+0000] {standard_task_runner.py:72} INFO - Started process 13261 to run task
+[2024-09-11T06:42:08.103+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'Filter_data', 'transform_label', 'manual__2024-09-11T06:36:57.976042+00:00', '--job-id', '54', '--raw', '--subdir', 'DAGS_FOLDER/data-prep-for-model.py', '--cfg-path', '/tmp/tmpe0vuqylj']
+[2024-09-11T06:42:08.107+0000] {standard_task_runner.py:105} INFO - Job 54: Subtask transform_label
+[2024-09-11T06:42:08.156+0000] {task_command.py:467} INFO - Running <TaskInstance: Filter_data.transform_label manual__2024-09-11T06:36:57.976042+00:00 [running]> on host dca6f81c3bd4
+[2024-09-11T06:42:08.252+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Filter_data' AIRFLOW_CTX_TASK_ID='transform_label' AIRFLOW_CTX_EXECUTION_DATE='2024-09-11T06:36:57.976042+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-11T06:36:57.976042+00:00'
+[2024-09-11T06:42:08.253+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-11T06:42:09.069+0000] {python.py:240} INFO - Done. Returned value was: /opt/***/data/transformed_label_data.json
+[2024-09-11T06:42:09.088+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-11T06:42:09.089+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=Filter_data, task_id=transform_label, run_id=manual__2024-09-11T06:36:57.976042+00:00, execution_date=20240911T063657, start_date=20240911T064208, end_date=20240911T064209
+[2024-09-11T06:42:09.124+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-09-11T06:42:09.140+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-11T06:42:09.141+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
