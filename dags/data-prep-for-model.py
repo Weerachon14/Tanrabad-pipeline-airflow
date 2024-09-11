@@ -96,11 +96,11 @@ def filter_data(**kwargs):
 #     except Exception as e:
 #         raise ValueError(f"Error reading JSON file: {e}")
 
-# default_args = {
-#     'owner': 'airflow',
-#     'start_date': datetime(2024, 9, 11),
-#     'retries': 1
-# }
+default_args = {
+    'owner': 'airflow',
+    'start_date': datetime(2024, 9, 11),
+    'retries': 1
+}
 
 with DAG(dag_id = 'Filter_data',
          default_args = default_args,

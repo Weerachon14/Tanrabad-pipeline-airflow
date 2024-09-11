@@ -2897,3 +2897,65 @@ File Path                                   PID    Runtime      # DAGs    # Erro
 /opt/airflow/dags/data-prep-for-model.py                             0           1  0.19s           2024-09-11T04:14:47                       5
 /opt/airflow/dags/example_dag.py                                     1           0  0.18s           2024-09-11T04:14:35                      12
 ================================================================================
+[2024-09-11T04:15:23.620+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2024-09-11T04:15:23.677+0000] {manager.py:824} INFO - There are 3 files in /opt/airflow/dags
+[2024-09-11T04:15:29.763+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test-mongodb-pipeline.py                           1           0  0.23s           2024-09-11T04:15:23                      10
+/opt/airflow/dags/data-prep-for-model.py                             0           1  0.16s           2024-09-11T04:15:17                       5
+/opt/airflow/dags/example_dag.py                                     1           0  0.15s           2024-09-11T04:15:06                      12
+================================================================================
+[2024-09-11T04:16:00.213+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/example_dag.py                                     1           0  0.20s           2024-09-11T04:15:37                      12
+/opt/airflow/dags/test-mongodb-pipeline.py                           1           0  0.20s           2024-09-11T04:15:54                      10
+/opt/airflow/dags/data-prep-for-model.py                             0           1  0.15s           2024-09-11T04:15:48                       5
+================================================================================
+[2024-09-11T04:16:30.677+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test-mongodb-pipeline.py                           1           0  0.20s           2024-09-11T04:16:24                      10
+/opt/airflow/dags/data-prep-for-model.py                             0           1  0.15s           2024-09-11T04:16:18                       5
+/opt/airflow/dags/example_dag.py                                     1           0  0.12s           2024-09-11T04:16:07                      12
+================================================================================
+[2024-09-11T04:17:01.234+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test-mongodb-pipeline.py                           1           0  0.23s           2024-09-11T04:16:55                      10
+/opt/airflow/dags/data-prep-for-model.py                             0           1  0.20s           2024-09-11T04:16:49                       5
+/opt/airflow/dags/example_dag.py                                     1           0  0.13s           2024-09-11T04:16:37                      12
+================================================================================
+[2024-09-11T04:17:31.683+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/test-mongodb-pipeline.py                           1           0  0.38s           2024-09-11T04:17:25                      10
+/opt/airflow/dags/data-prep-for-model.py                             0           1  0.17s           2024-09-11T04:17:19                       5
+/opt/airflow/dags/example_dag.py                                     1           0  0.12s           2024-09-11T04:17:08                      12
+================================================================================
+[2024-09-11T04:18:02.300+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/data-prep-for-model.py                             1           0  0.29s           2024-09-11T04:17:58                      20
+/opt/airflow/dags/test-mongodb-pipeline.py                           1           0  0.24s           2024-09-11T04:17:56                      10
+/opt/airflow/dags/example_dag.py                                     1           0  0.12s           2024-09-11T04:17:38                      12
+================================================================================
