@@ -1,0 +1,51 @@
+# Ignore Python bytecode files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore the .env file where sensitive information is stored
+.env
+
+# Ignore log files and output
+logs/
+*.log
+
+# Ignore Airflow DAG pickle files
+*.pkl
+
+# Ignore Airflow SQLite database (if using SQLite for development)
+airflow.db
+
+# Ignore the Airflow config files
+config/
+config/airflow.cfg
+config/unittests.cfg
+
+# Ignore Python virtual environments
+venv/
+env/
+
+# Ignore Docker specific files
+docker-compose.override.yml
+docker-compose.yml
+
+# Ignore PostgreSQL data
+postgres-db-volume/
+
+# Ignore MongoDB data
+mongo-data/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore build artifacts
+build/
+dist/
+
+# Ignore requirements lock files (optional, depending on how you manage dependencies)
+pip-log.txt
+pip-delete-this-directory.txt

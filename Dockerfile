@@ -14,3 +14,6 @@ USER airflow
 
 # Install dependencies globally without --user flag
 RUN pip install -r /requirements.txt
+
+# Set the default command to start the Airflow webserver
+CMD ["webserver"]
