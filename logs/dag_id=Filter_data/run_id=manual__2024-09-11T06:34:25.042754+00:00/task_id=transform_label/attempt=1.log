@@ -1,3 +1,0 @@
-[2024-09-11T06:34:27.296+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
-[2024-09-11T06:34:27.313+0000] {taskinstance.py:2593} INFO - Dependencies not met for <TaskInstance: Filter_data.transform_label manual__2024-09-11T06:34:25.042754+00:00 [queued]>, dependency 'Trigger Rule' FAILED: Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 1 non-success(es). upstream_states=_UpstreamTIStates(success=0, skipped=0, failed=0, upstream_failed=0, removed=0, done=0, success_setup=0, skipped_setup=0), upstream_task_ids={'filter_data'}
-[2024-09-11T06:34:27.315+0000] {local_task_job_runner.py:166} INFO - Task is not able to be run

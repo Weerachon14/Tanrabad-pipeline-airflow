@@ -2,7 +2,7 @@ import json
 import os
 from datetime import datetime,timedelta
 from airflow import DAG
-from airflow.operators.python_operator import PythonOperator
+from airflow.operators.python import PythonOperator
 from sshtunnel import SSHTunnelForwarder
 from pymongo import MongoClient
 
@@ -181,23 +181,57 @@ def transform_label_to_dengue(**kwargs):
     
     for item in data:
         label_data = item.get('label', [])
-            
+        
         # ตรวจสอบว่า label_data เป็น list หรือไม่
         if not label_data:
             label_data = []
         print(f"label_data: {label_data}")
         
-        # คำนวณจำนวน total_labels และจำนวนที่ค่า 'l' เป็น 1
+        # คำนวณจำนวน total_labels และจำนวนที่ค่า 'l' ใน dengue เป็น 1
         total_labels = len(label_data)
-        count_l = sum(1 for label in label_data if label.get('l', '').startswith('Y'))
-        print(f"Total labels: {total_labels}, Count of 'l' = 1: {count_l}")
+        count_l_dengue = sum(1 for label in label_data if label.get('l', '').startswith('Y'))
+        print(f"Total labels: {total_labels}, Count of 'l' in dengue = 1: {count_l_dengue}")
         
-        # คำนวณค่า score โดยใช้ค่าเฉลี่ยของ 'l'
-        score = count_l / total_labels if total_labels > 0 else 0
+        # คำนวณค่า score โดยใช้ค่าเฉลี่ยของ 'l' ใน dengue
+        score_dengue = count_l_dengue / total_labels if total_labels > 0 else 0
             
-        # ค่า 'l' ใน dengue จะเป็น 1 ถ้าหากค่า count_l มากกว่าหรือเท่ากับครึ่งหนึ่งของ total_labels
-        dengue_l = 1 if count_l >= total_labels / 2 else 0
-            
+        # ค่า 'l' ใน dengue จะเป็น 1 ถ้าหากค่า count_l_dengue มากกว่าหรือเท่ากับครึ่งหนึ่งของ total_labels
+        dengue_l = 1 if count_l_dengue >= total_labels / 2 else 0
+
+        # สำหรับ sentiment
+        sentiment_l_values = []
+        for label in label_data:
+            label_l = label.get('l', '')
+            if label_l == 'YBP':
+                sentiment_l_values.append(1)
+            elif label_l == 'YBO':
+                sentiment_l_values.append(0)
+            elif label_l == 'YBN':
+                sentiment_l_values.append(-1)
+
+        # คำนวณค่า 'l' ของ sentiment โดยหาค่าที่ปรากฏบ่อยที่สุด
+        if sentiment_l_values:
+            count_l_sentiment_1 = sentiment_l_values.count(1)
+            count_l_sentiment_0 = sentiment_l_values.count(0)
+            count_l_sentiment_minus_1 = sentiment_l_values.count(-1)
+
+            # หา 'l' ที่ปรากฏมากที่สุดใน sentiment
+            if count_l_sentiment_1 >= total_labels / 2:
+                sentiment_l = 1
+            elif count_l_sentiment_0 >= total_labels / 2:
+                sentiment_l = 0
+            elif count_l_sentiment_minus_1 >= total_labels / 2:
+                sentiment_l = -1
+            else:
+                sentiment_l = 0  # ค่าดีฟอลต์ถ้าไม่มีเงื่อนไขเข้า
+
+            # คำนวณค่า score สำหรับ sentiment
+            sentiment_score = max(count_l_sentiment_1, count_l_sentiment_0, count_l_sentiment_minus_1) / total_labels if total_labels > 0 else 0
+        else:
+            sentiment_l = 0
+            sentiment_score = 0
+        
+        # เก็บข้อมูล transformed data
         transformed_field = {
             'text': item.get('text'),
             'text_cleaned': item.get('text_cleaned'),
@@ -205,7 +239,11 @@ def transform_label_to_dengue(**kwargs):
             'label': {
                 'dengue': {
                     'l': dengue_l,
-                    'score': round(score, 2)  # ปัดค่า score ให้เป็นทศนิยม 2 ตำแหน่ง
+                    'score': round(score_dengue, 2)  # ปัดค่า score ให้เป็นทศนิยม 2 ตำแหน่ง
+                },
+                'sentiment': {
+                    'l': sentiment_l,
+                    'score': round(sentiment_score, 2)  # ปัดค่า score ให้เป็นทศนิยม 2 ตำแหน่ง
                 }
             }
         }
@@ -242,18 +280,16 @@ def check_json_file_task4(**kwargs):
     except Exception as e:
         raise ValueError(f"Error reading JSON file: {e}")
 
-
-
 default_args = {
     'owner': 'airflow',
-    'start_date': datetime(2024, 9, 19),
+    'start_date': datetime(2024, 9, 18),
     'retries': 1
 }
 
-with DAG(dag_id = 'dengue1',
+with DAG(dag_id = 'dengue_pipeline',
          default_args = default_args,
          description = 'Start pipeline by query and save file',
-         schedule_interval = None,
+         schedule='@daily',
          catchup = False
 ) as dag:
     
@@ -266,8 +302,7 @@ with DAG(dag_id = 'dengue1',
     # Task 2
     Filter_task = PythonOperator(
         task_id = 'filter_data',
-        python_callable = filter_data,
-        provide_context = True
+        python_callable = filter_data
     )
     # Check data in Task 2
     Check_json1 = PythonOperator(
@@ -279,8 +314,7 @@ with DAG(dag_id = 'dengue1',
     # Task 3 
     Transform_label_task = PythonOperator(
         task_id = 'transform_label',
-        python_callable = transform_label,
-        provide_context = True
+        python_callable = transform_label
     )
     
         # Check data in Task 3
