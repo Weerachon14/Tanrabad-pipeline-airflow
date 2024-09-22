@@ -95,8 +95,8 @@ def filter_data(**kwargs):
         os.makedirs(directory)
 
     # บันทึกข้อมูลที่ตัดแล้วเป็นไฟล์ JSON ใหม่
-    with open(filtered_file_path, 'w') as filtered_file:
-        json.dump(filtered_data, filtered_file)
+    with open(filtered_file_path, 'w', encoding='utf-8') as filtered_file:
+        json.dump(filtered_data, filtered_file, ensure_ascii=False, indent = 4)
     
     # ส่งพาธไฟล์ไปยัง XCom เพื่อใช้ใน task อื่น
     ti.xcom_push(key='filtered_file_path', value=filtered_file_path)
@@ -161,8 +161,8 @@ def transform_label(**kwargs):
     if not os.path.exists(directory):
         os.makedirs(directory)
         
-    with open(transformed_label_file_path, 'w') as transformed_label_file:
-        json.dump(transformed_data, transformed_label_file)
+    with open(transformed_label_file_path, 'w', encoding='utf-8') as transformed_label_file:
+        json.dump(transformed_data, transformed_label_file, ensure_ascii=False, indent=4)
                         
     ti.xcom_push(key='transformed_label_file_path', value= transformed_label_file_path)
     return transformed_label_file_path
@@ -250,13 +250,14 @@ def transform_label_to_dengue(**kwargs):
         transformed_data.append(transformed_field)
         
     transformed_label_to_dengue_file_path = '/opt/airflow/data/transformed_label_data.json'
-    
+    print(f"Saving file to: {transformed_label_to_dengue_file_path}")
+
     directory = os.path.dirname(transformed_label_to_dengue_file_path) 
     if not os.path.exists(directory):
         os.makedirs(directory)
         
-    with open(transformed_label_to_dengue_file_path, 'w') as transformed_label_file:
-        json.dump(transformed_data, transformed_label_file)
+    with open(transformed_label_to_dengue_file_path, 'w', encoding='utf-8') as transformed_label_file:
+        json.dump(transformed_data, transformed_label_file, ensure_ascii=False, indent=4)
                         
     ti.xcom_push(key='transform_label_to_dengue', value=transformed_label_to_dengue_file_path)
     return transformed_label_to_dengue_file_path
