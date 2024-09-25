@@ -163,50 +163,73 @@ def transform_label_to_dengue(**kwargs):
         # ตรวจสอบว่า label_data เป็น list หรือไม่
         if not label_data:
             label_data = []
-        print(f"label_data: {label_data}")
         
-        # คำนวณจำนวน total_labels และจำนวนที่ค่า 'l' ใน dengue เป็น 1
+        # คำนวณจำนวน total_labels 
         total_labels = len(label_data)
-        count_l_dengue = sum(1 for label in label_data if label.get('l', '').startswith('Y'))
         
-        # คำนวณค่า score โดยใช้ค่าเฉลี่ยของ 'l' ใน dengue
-        score_dengue = count_l_dengue / total_labels if total_labels > 0 else 0
+        # Dengue: 'l' & 'Score'
+        dengue_l_values = []
+        for label in label_data:
+            label_l_d = label.get('l','')
+            if label_l_d.startswith('Y') :
+               dengue_l_values.append(1)
+            elif label_l_d.startswith('N') :
+               dengue_l_values.append(0)
+               
+        # Count 'l' ของ dengue ที่มากที่สุด   
+        if dengue_l_values:
+            count_l_dengue_1 = dengue_l_values.count(1)
+            count_l_dengue_0 = dengue_l_values.count(0)
+            # เงื่อนไข: ถ้า 'Y' มากกว่าเท่ากับครึ่งหนึ่งให้เป็น 1, ถ้าไม่ใช่ให้เป็น 0
+            if count_l_dengue_1 > count_l_dengue_0:
+                dengue_l = 1
+            else:
+                dengue_l = 0
             
-        # ค่า 'l' ใน dengue จะเป็น 1 ถ้าหากค่า count_l_dengue มากกว่าหรือเท่ากับครึ่งหนึ่งของ total_labels
-        dengue_l = 1 if count_l_dengue >= total_labels / 2 else 0
-
-        # สำหรับ sentiment
+            # คำนวณ score โดยแบ่งจำนวนที่มากที่สุดด้วย total_labels
+            dengue_score = max(count_l_dengue_1,count_l_dengue_0) / total_labels if total_labels > 0 else 0
+        else:
+            dengue_l = 0
+            dengue_score = 0    
+             
+            
+        ### Sentiment: 'l' & 'Score' ###
         sentiment_l_values = []
         for label in label_data:
-            label_l = label.get('l', '')
-            if label_l == 'YBP':
+            label_l_s = label.get('l', '')
+            if label_l_s == 'YBP':
                 sentiment_l_values.append(1)
-            elif label_l == 'YBO':
+            elif label_l_s == 'YBO':
                 sentiment_l_values.append(0)
-            elif label_l == 'YBN':
+            elif label_l_s == 'YBN':
                 sentiment_l_values.append(-1)
+            else:
+                sentiment_l_values.append(None)
 
-        # คำนวณค่า 'l' ของ sentiment โดยหาค่าที่ปรากฏบ่อยที่สุด
+        # Count 'l' ของ sentiment ที่มากสุด
         if sentiment_l_values:
             count_l_sentiment_1 = sentiment_l_values.count(1)
             count_l_sentiment_0 = sentiment_l_values.count(0)
             count_l_sentiment_minus_1 = sentiment_l_values.count(-1)
 
-            # หา 'l' ที่ปรากฏมากที่สุดใน sentiment
-            if count_l_sentiment_1 >= total_labels / 2:
+            # เงื่อนไข: ถ้าค่าที่มากที่สุดเกิน 1 ใน 3 ให้เป็น 'l' นั้น
+            if count_l_sentiment_1 > count_l_sentiment_0 and count_l_sentiment_1 > count_l_sentiment_minus_1:
                 sentiment_l = 1
-            elif count_l_sentiment_0 >= total_labels / 2:
+            elif count_l_sentiment_0 > count_l_sentiment_1 and count_l_sentiment_0 > count_l_sentiment_minus_1:
                 sentiment_l = 0
-            elif count_l_sentiment_minus_1 >= total_labels / 2:
+            elif count_l_sentiment_minus_1 > count_l_sentiment_1 and count_l_sentiment_minus_1 > count_l_sentiment_0:
                 sentiment_l = -1
             else:
-                sentiment_l = 0  # ค่าดีฟอลต์ถ้าไม่มีเงื่อนไขเข้า
-
-            # คำนวณค่า max สำหรับใช้เป็น base ในการหา score สำหรับ sentiment
-            sentiment_score = max(count_l_sentiment_1, count_l_sentiment_0, count_l_sentiment_minus_1) / total_labels if total_labels > 0 else 0
+                sentiment_l = None  # ค่าดีฟอลต์ถ้าไม่มีเงื่อนไขเข้า
+                sentiment_score = None
+            # คำนวณ score โดยใช้จำนวนที่มากที่สุดหารด้วย total_labels
+            if sentiment_l is not None:  # คำนวณ sentiment_score เฉพาะเมื่อ sentiment_l ไม่ใช่ None
+                sentiment_score = max(count_l_sentiment_1, count_l_sentiment_0, count_l_sentiment_minus_1) / total_labels if total_labels > 0 else 0
+            else:
+                sentiment_score = None  # sentiment_score เป็น None ถ้า sentiment_l เป็น None
         else:
-            sentiment_l = 0
-            sentiment_score = 0
+            sentiment_l = None
+            sentiment_score = None
         
         # เก็บข้อมูล transformed data
         transformed_field = {
@@ -216,11 +239,11 @@ def transform_label_to_dengue(**kwargs):
             'label': {
                 'dengue': {
                     'l': dengue_l,
-                    'score': round(score_dengue, 2)  # ปัดค่า score ให้เป็นทศนิยม 2 ตำแหน่ง
+                    'score': round(dengue_score, 2) if dengue_score is not None else None  # ใช้ None ถ้าไม่มี score
                 },
                 'sentiment': {
-                    'l': sentiment_l,
-                    'score': round(sentiment_score, 2)  # ปัดค่า score ให้เป็นทศนิยม 2 ตำแหน่ง
+                    'l': sentiment_l,  # ให้เป็น None ถ้าไม่มีค่า
+                    'score': round(sentiment_score, 2) if sentiment_score is not None else None  # ใช้ None ถ้าไม่มี score
                 }
             }
         }
