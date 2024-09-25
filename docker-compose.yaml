@@ -120,6 +120,12 @@ services:
     command: webserver
     ports:
       - 8080:8080
+    environment:
+      <<: *airflow-common-env
+      SSH_USERNAME: ${SSH_USERNAME}
+      SSH_PASSWORD: ${SSH_PASSWORD}
+      MONGO_USERNAME: ${MONGO_USERNAME}
+      MONGO_PASSWORD: ${MONGO_PASSWORD}
     healthcheck:
       test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
       interval: 10s
@@ -130,6 +136,12 @@ services:
   airflow-scheduler:
     <<: *airflow-common
     command: scheduler
+    environment:
+      <<: *airflow-common-env
+      SSH_USERNAME: ${SSH_USERNAME}
+      SSH_PASSWORD: ${SSH_PASSWORD}
+      MONGO_USERNAME: ${MONGO_USERNAME}
+      MONGO_PASSWORD: ${MONGO_PASSWORD}
     healthcheck:
       test: ["CMD", "curl", "--fail", "http://localhost:8974/health"]
       interval: 30s
@@ -197,6 +209,10 @@ services:
     # yamllint enable rule:line-length
     environment:
       <<: *airflow-common-env
+      SSH_USERNAME: ${SSH_USERNAME}
+      SSH_PASSWORD: ${SSH_PASSWORD}
+      MONGO_USERNAME: ${MONGO_USERNAME}
+      MONGO_PASSWORD: ${MONGO_PASSWORD}
       _AIRFLOW_DB_MIGRATE: 'true'
       _AIRFLOW_WWW_USER_CREATE: 'true'
       _AIRFLOW_WWW_USER_USERNAME: ${_AIRFLOW_WWW_USER_USERNAME:-airflow}
