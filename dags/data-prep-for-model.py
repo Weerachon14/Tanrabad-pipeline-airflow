@@ -95,24 +95,6 @@ def filter_data(**kwargs):
 
     return filtered_file_path
 
-# #task 3 check data from filter task
-# def show_filter_data(**kwargs):
-#     # ดึง path ของไฟล์จาก XCom
-#     ti = kwargs['ti']
-#     file_path = ti.xcom_pull(key='mongo_file_path', task_ids='query_data_from_mongo')
-
-#     # ตรวจสอบว่า file_path ได้ถูกดึงมาจาก XCom หรือไม่
-#     if not file_path:
-#         raise ValueError("file_path is None. Make sure the previous task has pushed the correct file path to XCom.")
-
-#     # อ่านข้อมูลจากไฟล์ JSON
-#     try:
-#         with open(file_path, 'r') as file:
-#             data = json.load(file)
-#             print("JSON data:", data)  # พิมพ์ข้อมูล JSON เพื่อตรวจสอบ
-#     except Exception as e:
-#         raise ValueError(f"Error reading JSON file: {e}")
-
 
 # def transform_label(**kwargs):
 #     ti = kwargs['ti']
@@ -161,22 +143,6 @@ def filter_data(**kwargs):
     # ti.xcom_push(key='transformed_label_file_path', value= transformed_label_file_path)
     # return transformed_label_file_path
 
-# def check_data_from_transform_label(**kwargs):
-#     # ดึง path ของไฟล์จาก XCom
-#     ti = kwargs['ti']
-#     file_path = ti.xcom_pull(key='transformed_label_file_path', task_ids='transform_label')
-
-#     # ตรวจสอบว่า file_path ได้ถูกดึงมาจาก XCom หรือไม่
-#     if not file_path:
-#         raise ValueError("file_path is None. Make sure the previous task has pushed the correct file path to XCom.")
-
-#     # อ่านข้อมูลจากไฟล์ JSON
-#     try:
-#         with open(file_path, 'r') as file:
-#             data = json.load(file)
-#             print("JSON data:", data)  # พิมพ์ข้อมูล JSON เพื่อตรวจสอบ
-#     except Exception as e:
-#         raise ValueError(f"Error reading JSON file: {e}")
 
 #task 3 
 def transform_label_to_dengue(**kwargs):
@@ -274,22 +240,6 @@ def transform_label_to_dengue(**kwargs):
     ti.xcom_push(key='transform_label_to_dengue', value=transformed_label_to_dengue_file_path)
     return transformed_label_to_dengue_file_path
 
-# def check_json_dengue_data(**kwargs):
-#     # ดึง path ของไฟล์จาก XCom
-#     ti = kwargs['ti']
-#     file_path = ti.xcom_pull(key='transform_label_to_dengue', task_ids='transform_label_to_dengue')
-
-#     # ตรวจสอบว่า file_path ได้ถูกดึงมาจาก XCom หรือไม่
-#     if not file_path:
-#         raise ValueError("file_path is None. Make sure the previous task has pushed the correct file path to XCom.")
-
-#     # อ่านข้อมูลจากไฟล์ JSON
-#     try:
-#         with open(file_path, 'r') as file:
-#             data = json.load(file)
-#             print("JSON data:", data)  # พิมพ์ข้อมูล JSON เพื่อตรวจสอบ
-#     except Exception as e:
-#         raise ValueError(f"Error reading JSON file: {e}")
 
 default_args = {
     'owner': 'airflow',
