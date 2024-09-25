@@ -193,7 +193,7 @@ def transform_label_to_dengue(**kwargs):
             dengue_score = 0    
              
             
-        ### Sentiment: 'l' & 'Score' ###
+        # Sentiment: 'l' & 'Score' 
         sentiment_l_values = []
         for label in label_data:
             label_l_s = label.get('l', '')
@@ -222,11 +222,12 @@ def transform_label_to_dengue(**kwargs):
             else:
                 sentiment_l = None  # ค่าดีฟอลต์ถ้าไม่มีเงื่อนไขเข้า
                 sentiment_score = None
-            # คำนวณ score โดยใช้จำนวนที่มากที่สุดหารด้วย total_labels
-            if sentiment_l is not None:  # คำนวณ sentiment_score เฉพาะเมื่อ sentiment_l ไม่ใช่ None
+                
+            # คำนวณ score โดยใช้จำนวนที่มากที่สุดหารด้วย total_labels    
+            if sentiment_l is not None:  
                 sentiment_score = max(count_l_sentiment_1, count_l_sentiment_0, count_l_sentiment_minus_1) / total_labels if total_labels > 0 else 0
-            else:
-                sentiment_score = None  # sentiment_score เป็น None ถ้า sentiment_l เป็น None
+            else:                          
+                sentiment_score = None    # sentiment_score เป็น None ถ้า sentiment_l เป็น None
         else:
             sentiment_l = None
             sentiment_score = None
