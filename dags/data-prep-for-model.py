@@ -202,7 +202,6 @@ def transform_label_to_dengue(**kwargs):
         # คำนวณจำนวน total_labels และจำนวนที่ค่า 'l' ใน dengue เป็น 1
         total_labels = len(label_data)
         count_l_dengue = sum(1 for label in label_data if label.get('l', '').startswith('Y'))
-        print(f"Total labels: {total_labels}, Count of 'l' in dengue = 1: {count_l_dengue}")
         
         # คำนวณค่า score โดยใช้ค่าเฉลี่ยของ 'l' ใน dengue
         score_dengue = count_l_dengue / total_labels if total_labels > 0 else 0
@@ -237,7 +236,7 @@ def transform_label_to_dengue(**kwargs):
             else:
                 sentiment_l = 0  # ค่าดีฟอลต์ถ้าไม่มีเงื่อนไขเข้า
 
-            # คำนวณค่า score สำหรับ sentiment
+            # คำนวณค่า max สำหรับใช้เป็น base ในการหา score สำหรับ sentiment
             sentiment_score = max(count_l_sentiment_1, count_l_sentiment_0, count_l_sentiment_minus_1) / total_labels if total_labels > 0 else 0
         else:
             sentiment_l = 0
