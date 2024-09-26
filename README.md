@@ -29,4 +29,4 @@ This project implements an ETL pipeline using **Apache Airflow**. The pipeline e
   - Score: A ratio representing the occurrence of the majority class compared to the total number of labels.
   - Detail: An array storing the score for each possible class (`1`, `0`, `-1`) for `sentiment`, and the scores for `1` and `0` for `dengue`.
   
-- Saves the transformed data with computed labels, scores, and details into a final JSON file: `/opt/airflow/data/transformed_label_data.json`.
+- Saves the transformed data with computed labels, scores, and details into a final JSON file:`.
