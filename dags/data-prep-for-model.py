@@ -219,6 +219,7 @@ def transform_label_to_dengue(**kwargs):
             count_l_sentiment_0 = sentiment_l_values.count(0)
             count_l_sentiment_minus_1 = sentiment_l_values.count(-1)
             count_l_sentiment_News = sentiment_l_values.count(None)
+            
             # เงื่อนไข: ถ้าค่าที่มากที่สุดเกิน 1 ใน 3 ให้เป็น 'l' นั้น
             if count_l_sentiment_1 > count_l_sentiment_0 and count_l_sentiment_1 > count_l_sentiment_minus_1 and count_l_sentiment_1 > count_l_sentiment_News:
                 sentiment_l = 1
@@ -228,16 +229,18 @@ def transform_label_to_dengue(**kwargs):
                 sentiment_l = -1
             else:
                 sentiment_l = None
+            # คำนวณจำนวน total_labels_sentiment            
+            total_labels_sentiment = count_l_sentiment_1 + count_l_sentiment_0 + count_l_sentiment_minus_1
                 
-            # คำนวณ score โดยใช้จำนวนที่มากที่สุดหารด้วย total_labels    
+            # คำนวณ score โดยใช้จำนวนที่มากที่สุดหารด้วย total_labels_sentiment    
             if sentiment_l is not None:  
-                sentiment_score = max(count_l_sentiment_1, count_l_sentiment_0, count_l_sentiment_minus_1) / total_labels if total_labels > 0 else 0
+                sentiment_score = max(count_l_sentiment_1, count_l_sentiment_0, count_l_sentiment_minus_1) / total_labels_sentiment if total_labels_sentiment > 0 else 0
                 
                 # เก็บ detail ของ sentiment
                 sentiment_detail = [
-                    round(count_l_sentiment_1 / total_labels, 2),  # score ของ l=1
-                    round(count_l_sentiment_0 / total_labels, 2),  # score ของ l=0
-                    round(count_l_sentiment_minus_1 / total_labels, 2)  # score ของ l=-1
+                    round(count_l_sentiment_1 / total_labels_sentiment, 2),  # score ของ l=1
+                    round(count_l_sentiment_0 / total_labels_sentiment, 2),  # score ของ l=0
+                    round(count_l_sentiment_minus_1 / total_labels_sentiment, 2)  # score ของ l=-1
                 ]
             else:
                 sentiment_score = None
